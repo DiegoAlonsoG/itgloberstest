@@ -1,23 +1,29 @@
 import React from 'react'
-import ButtonBorder from '../componentsUI/ButtonBorder'
-import ButtonNoBorder from '../componentsUI/ButtonNoBorder'
+import rain from '../img/RainLogo.png'
+import Button from 'react-bootstrap/Button';
+import {MdKeyboardArrowRight} from 'react-icons/md'
 
 export default function PufiRain() {
   return (
     <div className='flex'>
-        <div>
-            <ButtonBorder>SHOP</ButtonBorder>
+
+        <div className='rain'>
+            <Button>SHOP</Button>
         </div>
-        <div>
-            <img src='xxx' alt='rain'/>
-            <p>Pufi RAIN</p>
-            <p/>
-            <p>Descripcion del producto. Este es un texto simulado</p>
-            <ButtonNoBorder>
-                <img src='xxx' alt='flecha'/>
-                VER MAS
-            </ButtonNoBorder>
+
+        <div className='flex flex-col items-center bg-white w-[50vw] py-48'>
+            <img className='h-40 w-40' src={rain} alt='cart'/>
+            <p className='text-[60px]'>Pufi RAIN</p>
+            <p className='w-[5vw] border-solid border-gray-400 border-y-2'/>
+            <p className='w-[10vw] text-center'>Descripcion del producto. Este es un texto simulado</p>
+            <Button variant="outline-light">
+                <div className='flex items-center'>
+                    <MdKeyboardArrowRight color='black'/>
+                    <div className='text-black'>VER MAS</div>
+                </div>
+            </Button>
         </div>
+
     </div>
   )
 }

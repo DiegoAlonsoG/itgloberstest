@@ -11,12 +11,11 @@ import PufiRain from '../../components/PufiRain'
 
 export default function Landing() {
   return (
-    <div>
+    <>
 
-      <div>
-        <Nav/>
-        <Main/>
-      </div>
+      <Nav/>
+
+      <Main/>
 
       <PufiRain/>
       <PufiPuff/>
@@ -28,6 +27,6 @@ export default function Landing() {
 
       <Footer/>
       
-    </div>
+    </>
   )
 }
