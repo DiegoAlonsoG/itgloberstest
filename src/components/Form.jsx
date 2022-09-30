@@ -10,7 +10,7 @@ export default function FormControl() {
         <p className='text-center text-xl'>Y enterate de todas las novedades</p>
 
     <form className='flex w-[40vw] m-auto text-center border-solid border-black border-2 justify-between p-2' action="https://formspree.io/f/maykjyrj" method="POST">
-        <input className='mx-2' type="email" name="email" placeholder='Ingresa tu email'/>
+        <input className='w-[30vw] mx-2' type="email" name="email" placeholder='Ingresa tu email'/>
         <button className='mx-2' type="submit">
             <IoMdArrowRoundForward/>
         </button>
